@@ -12,13 +12,15 @@ def spank num
   spanks
 end
 
-print "What year were you born? "
-year = gets.chomp.to_i
-print "What month were you born? "
-month = gets.chomp.to_i
-print "What day were you born? "
-day = gets.chomp.to_i
+if __FILE__ == $0
+  print "What year were you born? "
+  year = gets.chomp.to_i
+  print "What month were you born? "
+  month = gets.chomp.to_i
+  print "What day were you born? "
+  day = gets.chomp.to_i
 
-years_old = years(year, month, day)
-puts "You are #{years_old} years old"
-puts spank years_old
+  years_old = years(year, month, day)
+  puts "You are #{years_old} years old"
+  puts spank years_old
+end

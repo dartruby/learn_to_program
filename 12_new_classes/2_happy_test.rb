@@ -4,6 +4,10 @@ require_relative '2_happy_birthday'
 class Happy < MiniTest::Test
   describe 'return number of years' do
     it 'return the years' do
+      assert_equal years(2021, 1, 1), 0
+    end
+
+    it 'return the years' do
       assert_equal years(1979, 1, 1), 42
     end
 
